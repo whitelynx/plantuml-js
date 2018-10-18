@@ -7,8 +7,8 @@ build:
 	@$(BIN)/pegjs --allowed-start-rules start lib/plantuml-js.pegjs dist/plantuml-js.js
 
 test: build
-	@$(BIN)/mocha -c
-	
+	@$(BIN)/mocha -c docs/test
+
 docs: build
 	@cp lib/plantuml-js.pegjs docs/
 
